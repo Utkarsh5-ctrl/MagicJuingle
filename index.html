@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Magic Jungle Stories</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header">
+    <a href="#" class="logo">LOGO</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Stories</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="Forest Images/Magical Forest/MagicForest.jpg" id="MagicForest">
+    <img src="Moonlight Images/stars.png" id="stars">
+    <img src="Moonlight Images/moon.png" id="moon">
+    <h2 id="text"><span>ADVENTURE TO</span><br>Magic Jungle</h2>
+    <a href="#sec" id="btn">Stories</a>
+    <img src="Forest Images/water.png" id="water">
+    <!-- <img src="Moonlight Images/mountains_front2.png" id="mountains_front2"> -->
+  </section>
+  <div class="sec" id="sec">
+    <h2>Magic Jungle Stories</h2>
+    <p>Once upon a time in a clearing in a magical forest, I was a fifteen year old kid separated from his parents in the middle of the war.To save life I ran into the unknown forest filled with deadly wild animal waiting to hunt down their prey.
+      Little did I know what is going to happen next suddenly a mysterious roar struck in my ears, that voice is so fierce that I started shaking and ran as fast as I could in the opposite direction. By the time I stopped to catch my breath, it already got late and I can see the bright Moonlight reflecting from the pebbles near the lake. My stomach is groaning from hunger but my hunger feeling is suppressed by the terror of wild animals residing in this Jungle.
+      I decided to sleep on the tree in this merciless chilly night, just when I was stuggling to sleep I heard the sharp hissing sound abruptly coming towards me, the moment I opened my eyes giant cobra was scanning me constantly without even blinking(except they don't have eyelids so they can't blink) which frightened my body to depth of the soul. I did not move a inch as of panic which surprisingly worked for both of us as the cobra returned to his hole and my body to my soul.<br><br>After sleepless night here comes shiny morning, As I was refreshing near the lake all of a sudden I heard the monstrous trumpet of parade of elephants from some distance. Out of curiosity I followed the sound and abruptly saw the herd of elephants in front of me from behind the rocks, although I was the mountain kid but that was the first time I saw this huge and gigantic white and gleaming elephants. Few moments after, they started feeling uneasy like they sense the weird aroma incircling the Forest, they got alert and before I could understand the gravity of situation one elephant saw me and following moment I was chased by angry herd of elephants.
+      Almost ran out of stamina I heard the gushing of water from short distance, I ran towards it as a last ray of hope.<br><br>After reaching there I found the monstrous flooded River wiping out everything on its way, on the right side there was a cracked and damaged bridge which was used to cross the River which must be broken by the flood. Not even a professional swimmer can cross this catastrophic River led to unknown depth of the Forest.I can heard the rumbling of ground as the herd nearly approached me, I realise that I will going to die whether I stay here or cross the River. As the herd approached me I jump into the River without thinking and carried out with the flow, almost drowned but suddenly my hands clinged the branch of broken tree. I tried to cross the River with all my remaining strength after painful struggling of an hour I reached the halfway but here the waves grown larger like mountain and suddenly the branch snapped into two and I flown into river, I passed out after a second of incident awaiting for the hands of death to cherish my soul.
+      After waking up I found myself in a  mysterious place, while I was wondering that how am I alive or is this afterdeath. There was beautiful and enlightened
+      Forest, nearby there was a board says: "Welcome to <strong>Magic Forest</strong>".<br><br>To be Continued... </p>
+  </div>
+</body>
+<script>
+  let stars = document.getElementById('stars');
+  let moon = document.getElementById('moon');
+  let MagicForest = document.getElementById('MagicForest');
+  let text = document.getElementById('text');
+  let btn = document.getElementById('btn');
+  let water = document.getElementById('water');
+  let mountains_front2 = document.getElementById('mountains_front2');
+
+   window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    stars.style.left = value*0.25 + 'px';
+    moon.style.top = value* 1.0+ 'px';
+    // mountains_front2.style.top = value* 0 + 'px';
+    text.style.marginRight = value* 4+ 'px';
+    text.style.marginTop = value* 2.0+ 'px';
+    btn.style.marginTop = value* 2.0+ 'px';
+    header.style.Top = value* 0.5+ 'px';
+  })
+ </script>
+
+</html>
